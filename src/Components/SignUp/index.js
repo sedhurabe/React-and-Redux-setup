@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import LogInForm from './Form';
+import RegistrationForm from './Form';
 //import { createUserAction } from '../../actions/login';
 import PropTypes from 'prop-types';
 //import { connect } from 'react-redux';
 
-class LogIn extends Component {
+class SignUp extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -23,8 +23,8 @@ class LogIn extends Component {
 		return <div className="text-center">
 			<div id="signup-form" className="section middle-wrapper">
 	        <div className="container">
-	            <h1>Sign In</h1>
-	            <LogInForm handleSubmit={this.handleSubmit} />
+	            <h1>Registration</h1>
+	            <RegistrationForm handleSubmit={this.handleSubmit} />
 	        </div>
 	    </div>
     </div>
@@ -36,11 +36,11 @@ class LogIn extends Component {
 //   loginUserAction: PropTypes.func.isRequired,
 // };
 
-LogIn.contextTypes = {
+SignUp.contextTypes = {
   router: PropTypes.object.isRequired
 };
 
 //export default connect(null, { loginUserAction })(LogIn);
 
-export default LogIn;
+export default SignUp;
 
